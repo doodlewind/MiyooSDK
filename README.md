@@ -6,7 +6,7 @@ Miyoo is a handheld retro game emulator. It supports a variety of classic game e
 
 ![miyoo](./miyoo.jpg)
 
-This repo provides a battery included environment for compiling graphics apps on Miyoo. A [simplest demo](./demo) is also available.
+This repo provides a battery included environment for compiling graphics apps on Miyoo. A [simplest demo app](./demo) is also available.
 
 ## Usage
 Make sure you have [Docker](https://www.docker.com/) installed. Just init the environment with precompiled toolchain:
@@ -29,10 +29,14 @@ Build demo app:
 
 ``` bash
 cd demo
-./build.sh
+
+# Run make inside container
+docker run -d --rm -v `pwd`:/home miyoo_sdk make
 ```
 
-Now we can move the `demo.out` output to SD card and start it from the App Installer on Miyoo. For a standalone icon entry, checkout the [GMenu2X](https://mtorromeo.github.io/gmenu2x/documentation/) documentation to create links.
+This should compile the `demo/demo.out` output, just copy this file to SD card, and start it from the App Installer on Miyoo. For a standalone icon entry, checkout the [GMenu2X](https://mtorromeo.github.io/gmenu2x/documentation/) documentation about using links.
+
+> For multi app projects, this approach can be similarly applied to compile them separately. The image itself always remain clean and immutable after builds, which doesn't contradict to use build cache in your host FS.
 
 ## Credit
 Toolchain courtesy of [Steward](https://github.com/steward-fu/) 🏅
