@@ -2,7 +2,9 @@
 Docker environment for developing Miyoo Linux apps.
 
 ## Introduction
-Miyoo is a handheld retro game emulator. It supports a variety of classic game emulators and indie games, which are generally based on the [SDL](https://www.libsdl.org/) framework.
+Miyoo is a handheld retro game emulator. It supports a variety of classic game emulators and indie games, which are generally based on the [SDL](https://www.libsdl.org/) framework:
+
+![miyoo](./miyoo.jpg)
 
 This repo provides a battery included environment for compiling graphics apps on Miyoo. A [simplest demo](./demo) is also available.
 
