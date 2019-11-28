@@ -29,7 +29,7 @@ Build demo app:
 cd demo
 
 # Run make inside container
-docker run -d --rm -v `pwd`:/home miyoo_sdk make
+docker run -d --rm -v `pwd`:/root miyoo_sdk make
 ```
 
 This should compile the `demo/demo.out` output, just copy this file to SD card, and start it from the App Installer on Miyoo. For a standalone icon entry, checkout the [GMenu2X](https://mtorromeo.github.io/gmenu2x/documentation/) documentation about using links.
