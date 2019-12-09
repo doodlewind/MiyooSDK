@@ -11,7 +11,7 @@ Make sure you have [Docker](https://www.docker.com/) installed. Just init the en
 
 ``` bash
 cd MiyooSDK
-wget http://fe-lab.gaoding.com/miyoo/toolchain.tar.gz
+wget https://fe-lab.gaoding.com/miyoo/toolchain.tar.gz
 
 docker pull debian:9
 docker build -t miyoo_sdk .
