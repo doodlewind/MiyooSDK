@@ -20,6 +20,7 @@ int main(int argc, char* args[])
 
   if(SDL_Init(SDL_INIT_VIDEO) != 0){
     printf("%s, failed to SDL_Init\n", __func__);
+    printf("Could not initialize SDL: %s\n", SDL_GetError());
     return -1;
   }
  
