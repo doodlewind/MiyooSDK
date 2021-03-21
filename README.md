@@ -39,7 +39,7 @@ This should compile the `demo/demo.out` output, just copy this file to SD card, 
 ## About Miyoo Development
 This toolchain is compatible with Miyoo, PocketGO and New BittBoy handheld, whose CPU model is Allwinner F1C100S.
 
-For app development, you don't have to build the firmware from scratch, just focus on compiling the app binary. If you are intereted in building CFW, please checkout the [Miyoo](https://github.com/steward-fu/miyoo) and [MiyooCFW](https://github.com/TriForceX/MiyooCFW) project.
+For app development, you don't have to build the firmware from scratch, just focus on compiling the app binary. If you are interested in building CFW, please checkout the [Miyoo](https://github.com/steward-fu/miyoo) and [MiyooCFW](https://github.com/TriForceX/MiyooCFW) project.
 
 ## Credit
 Toolchain courtesy of [Steward](https://github.com/steward-fu/) 🏅
